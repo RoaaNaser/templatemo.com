@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="ss/hover.css" />
+  <title>VILLA</title>
+
+  <style>
+    body{
+
+      overflow-x: hidden;
+    }
+    .nav1{
+      color: white;
+      background-color:darkgrey;
+      border-radius: 9999px;
+    }
+    .nav1:hover{
+      background-color: chocolate;
+    }
+    .nav2{
+      color: black;
+      position: relative;
+    }
+    .nav2:hover{
+      color: chocolate;
+      transition: 0.4s;
+    }
+    .btn1{
+      color: white;
+      background-color:chocolate;
+      border-radius: 9999px;
+      text-align: center;
+    }
+    .btn2{
+      color: white;
+      background-color:black;
+      border-radius: 9999px;
+      text-align: center;
+    }
+    .btn2:hover{
+      color: chocolate;
+    }
+    .btt2 a:hover{
+      color:chocolate ;
+      border-bottom: 1.5px solid chocolate
+    } 
+    .spba{
+      background-color:white;
+      font-size: 20px;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    .fe{
+      font-size:35px;
+      text-align:justify;
+      font-weight: bold;
+    }
+    .shad{
+      box-shadow: 0 5px 10px gray
+    }
+    .btt:hover{
+      background-color:chocolate ;
+      border: hidden;
+    }
+
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent1"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0  mx-2">
+          <li class="p-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+              class="bi bi-map-fill" style="color:chocolate;"viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M16 .5a.5.5 0 0 0-.598-.49L10.5.99 5.598.01a.5.5 0 0 0-.196 0l-5 1A.5.5 0 0 0 0 1.5v14a.5.5 0 0 0 .598.49l4.902-.98 4.902.98a.5.5 0 0 0 .196 0l5-1A.5.5 0 0 0 16 14.5zM5 14.09V1.11l.5-.1.5.1v12.98l-.402-.08a.5.5 0 0 0-.196 0zm5 .8V1.91l.402.08a.5.5 0 0 0 .196 0L11 1.91v12.98l-.5.1z" />
+            </svg>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-current="page" href="#">Sunny Isles Beach, FL 33160</a>
+          </li>
+          <li class="p-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope-fill" style="color:chocolate;"
+              viewBox="0 0 16 16">
+              <path
+                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+            </svg>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">info@company.com</a>
+          </li>
+          
+        </ul>
+
+        <div class="d-flex gap-2">
+          <div class=" px-2 nav1 p-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook m-1 "
+              viewBox="0 0 16 16">
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+            </svg>
+          </div>
+        
+          <div class=" px-2 nav1 p-1 ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram m-1"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+            </svg>
+          </div>
+        
+          <div class=" px-2 nav1 p-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter m-1"
+              viewBox="0 0 16 16">
+              <path
+                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
+            </svg>
+          </div>
+        
+          <div class=" px-2 nav1 p-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-linkedin m-1"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form> -->
+      </div>
+    </div>
+  </nav>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="position:sticky; top:0; z-index: 999;">
+    <div class="container">
+      <a class="navbar-brand mb-0 h1" href="#" style="font-weight:bold; font-size:xx-large;">VILLA</a>
+      <button class="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class=" navbar btt2" id="navbarSupportedContent" >
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item px-3">
+            <a class="nav-link active" style="color:chocolate;" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link active" href="#prop">Properties</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link active" aria-current="page" href="#deta">Property Details</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link active" aria-disabled="true" href="#cont">Contact Us</a>
+          </li>
+        </ul>
+
+          <div class="rounded-pill" style="background-color:black ;">
+            <div class="d-flex">
+              <div style=" background-color:chocolate; border-radius: 40px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                  class="bi bi-calendar2-fill m-2 p-1" viewBox="0 0 16 16" style="color:white;">
+                  <path
+                    d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM2.545 3h10.91c.3 0 .545.224.545.5v1c0 .276-.244.5-.546.5H2.545C2.245 5 2 4.776 2 4.5v-1c0-.276.244-.5.545-.5" />
+                </svg>
+              </div>
+              <div class="pt-2 mx-2">
+                <p class=" text-light ">Schedule a visit</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselExampleIndicators" class="carousel slide" >
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img src="./imgs/kara-eads-L7EwHkq1B2s-unsplash.jpg" class="d-block w-100" alt="...">
+        <div class="card-img-overlay container">
+          <h1 class="card-text p-5 m-5" style="font-size: 65px; margin-top: 50px;"><span class="spba">Toronto,</span><span style="color:chocolate; " class="spba">Canada</span><br>HYRPY!<br>GET THE<br>BEST VILLA<br>FOR YOU</h1>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="./imgs/deborah-cortelazzi-gREquCUXQLI-unsplash.jpg" class="d-block w-100" alt="...">
+        <div class="card-img-overlay container">
+          <h1 class="card-text p-5 m-5" style="font-size: 65px; margin-top: 50px;"><span class="spba">Melbourne,</span><span
+              style="color:chocolate; " class="spba">Australia</span><br>BEQUICK!<br>GET THE<br>BEST VILLA<br>FIN TOWN</h1>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="./imgs/spacejoy-c0JoR_-2x3E-unsplash.jpg" class="d-block w-100" alt="...">
+        <div class="card-img-overlay container">
+          <h1 class="card-text p-5 m-5" style="font-size: 65px; margin-top: 50px;"><span class="spba">Miami,</span><span
+              style="color:chocolate; " class="spba">South Florida</span><br>ACT NOW!<br>GET THE<br>HIGHEST<br>LEVEL<br>PENTHOUSE</h1>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </div>
+  
+  <div class="container text-center mt-5" id="deta">
+    <div class="row">
+      <div class="col">
+        <img src="./imgs/featured.jpg" alt="">
+      </div>
+
+      <div class="col">
+        <h1 class="fe"><span style="color:chocolate; font-size:15px;">| FEATURED</span><br>Best<br>Appartment &<br>Sea View</h1>
+
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                Best useful links ?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body" style="text-align:left;">
+                  Get <strong>the best villa</strong> website template in HTML CSS and Bootstrap for your business.TemplateMo provides you the <code>best free CSS templates</code> in the world. Please tell your friends about it.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                aria-expanded="false" aria-controls="collapseTwo">
+                How does this work ?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body" style="text-align:left;">
+                Dolor <strong>almesit amet,</strong> consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur <code>adipiscing</code>
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                aria-expanded="false" aria-controls="collapseThree">
+                Why is Villa Agency the best ?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body" style="text-align:left;">
+                Dolor <strong>almesit amet,</strong> consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur <code>adipiscing</code> 
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        
+        <div class="card mb-3 shad" style="max-width: 300px;">
+          <div class="row g-0">
+            <div class="col-md-4 p-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-diagram-3"
+                style="color:chocolate;" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z" />
+              </svg>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">250 m2</h5>
+                <p class="card-text"><small class="text-body-secondary">Total Flat Space</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3 shad" style="max-width: 300px;">
+          <div class="row g-0">
+            <div class="col-md-4 p-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-pen"  style="color:chocolate;"
+                viewBox="0 0 16 16">
+                <path
+                  d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001m-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708z" />
+              </svg>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Contract</h5>
+                <p class="card-text"><small class="text-body-secondary">Contract Ready</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3 shad" style="max-width: 300px;">
+          <div class="row g-0">
+            <div class="col-md-4 p-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-window-desktop" style="color:chocolate;"
+                viewBox="0 0 16 16">
+                <path d="M3.5 11a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z" />
+                <path
+                  d="M2.375 1A2.366 2.366 0 0 0 0 3.357v9.286A2.366 2.366 0 0 0 2.375 15h11.25A2.366 2.366 0 0 0 16 12.643V3.357A2.366 2.366 0 0 0 13.625 1zM1 3.357C1 2.612 1.611 2 2.375 2h11.25C14.389 2 15 2.612 15 3.357V4H1zM1 5h14v7.643c0 .745-.611 1.357-1.375 1.357H2.375A1.366 1.366 0 0 1 1 12.643z" />
+              </svg>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Payment</h5>
+                <p class="card-text"><small class="text-body-secondary">Payment</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3 shad" style="max-width: 300px;">
+          <div class="row g-0">
+            <div class="col-md-4 p-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-shield" style="color:indianred;"
+                viewBox="0 0 16 16">
+                <path
+                  d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56" />
+              </svg>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Safety</h5>
+                <p class="card-text"><small class="text-body-secondary">24/7 Under</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="card text-bg-dark mt-5">
+    <img src="./imgs/christopher-jolly-GqbU78bdJFM-unsplash.jpg" class="card-img" alt="..." style="opacity:0.25 ;">
+    <div class="card-img-overlay" style="text-align:center; font-size: 45px; font-weight: bold;">
+      <p class="mt-5" style="color:chocolate; font-size:15px;" >| VIDEO VIEW</p>
+      <p>Get Closer View <br>& Different<br>Feeling</p><br><br><br>
+
+      <div class="card w-75 container" style="box-shadow: 0 5px 10px gray">
+        <img src="./imgs/video-frame.jpg" class="card-img" alt="..." style="border-radius: 20px;" width="400" height="400">
+        <div class="card-img-overlay" style="margin-top:15%;">
+          <a href="https://www.youtube.com/" target="_blank" class="btn btn-light rounded-pill" style="box-shadow: 0 10px 20px chocolate; padding: 20px;"><svg
+              xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-caret-right-fill"
+              style="color:chocolate ; " viewBox="0 0 16 16">
+              <path
+                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+            </svg></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container text-center" style="margin-top:200px ;">
+    <div class="row">
+      <div class=" col-sm-4 mb-3 mb-sm-0">
+        
+          <div class="card mb-3 shad" style="max-width: 300px; background-color:rgba(240, 206, 152, 0.76); border: hidden;">
+            <div class="row g-0">
+              <div class="col-md-4 p-4">
+                <h1 style="color:chocolate; font-weight: bold;">34</h1>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body m-1">
+                  <h5 class="card-title">Buildings</h5>
+                  <h5>Finished Now</h5>
+                </div>
+              </div>
+            </div>
+            <span class="position-absolute top-0 start-100 translate-middle p-4 border border-light rounded-circle"
+              style="background-color:chocolate;">
+              <span class="visually-hidden">New alerts</span>
+            </span>
+          </div>
+        
+      </div>
+
+      <div class="col">
+
+        <div class="card mb-3 shad" style="max-width: 300px; background-color:rgba(240, 206, 152, 0.76); border: hidden;">
+          <div class="row g-0">
+            <div class="col-md-4 p-4">
+              <h1 style="color:chocolate; font-weight: bold;">12</h1>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body m-1">
+                <h5 class="card-title">Years</h5>
+                <h5>Experience</h5>
+              </div>
+            </div>
+          </div>
+          <span class="position-absolute top-0 start-100 translate-middle p-4 border border-light rounded-circle"
+            style="background-color:chocolate;">
+            <span class="visually-hidden">New alerts</span>
+          </span>
+        </div>
+
+      </div>
+
+      <div class="col">
+        
+        <div class="card mb-3 shad" style="max-width: 300px; background-color:rgba(240, 206, 152, 0.76); border: hidden;">
+          <div class="row g-0">
+            <div class="col-md-4 p-4">
+              <h1 style="color:chocolate; font-weight: bold;">24</h1>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body m-1">
+                <h5 class="card-title">Awwards</h5>
+                <h5>Won 2023</h5>
+              </div>
+            </div>
+          </div>
+          <span class="position-absolute top-0 start-100 translate-middle p-4 border border-light rounded-circle"
+            style="background-color:chocolate;">
+            <span class="visually-hidden">New alerts</span>
+          </span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div style="background-color:rgba(220, 220, 220, 0.769);" class="mt-5" id="deta">
+    <div class="container p-3" style=" font-size: 45px; font-weight: bold;" >
+      <p class="mt-5" style="color:chocolate; font-size:15px;">| BEST DEAL</p>
+      <p>Find Your Best <br>Deal Right Now!</p>
+    </div>
+
+    <div class="d-grid gap-3 d-md-flex justify-content-md-end container">
+      <button class="btn me-md-2 text-light btn-lg" type="button" style="background-color:chocolate;">Appartment</button>
+      <button class="btn btn-dark btn-lg" type="button">Villa House</button>
+      <button class="btn btn-dark btn-lg" type="button">Penthouse</button>
+    </div>
+
+    <div class="container text-center mt-5">
+      <div class="row">
+
+        <div class="col">
+
+          <div class="card p-4" style="width: 18rem; box-shadow: 0 5px 10px gray;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item disabled">Total Flat Space <span style="font-weight:bold; padding: 10px; color: black; font-size: 20px;">185 m2</span></li>
+              <li class="list-group-item disabled">Floor number <span style="font-weight:bold; padding: 10px; color: black; font-size: 20px;">26th</span></li>
+              <li class="list-group-item disabled">Number of rooms <span style="font-weight:bold; padding: 10px; color: black; font-size: 20px;">4</span></li>
+              <li class="list-group-item disabled">Parking Available <span style="font-weight:bold; padding: 10px; color: black; font-size: 20px;">Yes</span></li>
+              <li class="list-group-item disabled">Payment Process <span style="font-weight:bold; padding: 10px; color: black; font-size: 20px;">Bank</span></li>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="col">
+
+          <img src="./imgs/deal-01.jpg" alt="">
+        </div>
+    
+        <div class="col">
+          <div style="text-align:left ;" class="mx-2">
+            <h5>Extra Info About Property</h5><br>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor pack incididunt ut labore et dolore magna
+              aliqua quised ipsum suspendisse.
+            </p><br>
+            <p>
+              When you need free CSS templates, you can simply type TemplateMo in any search engine website. In addition, you can
+              type
+              TemplateMo Portfolio, TemplateMo One Page Layouts, etc.
+            </p>
+          </div><br>
+
+            <div class="rounded-pill mb-5" style="background-color:black ;">
+              <div class="d-flex">
+                <div style=" background-color:chocolate; border-radius: 40px;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-calendar2-fill m-2 p-1" viewBox="0 0 16 16" style="color:white;">
+                    <path
+                      d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM2.545 3h10.91c.3 0 .545.224.545.5v1c0 .276-.244.5-.546.5H2.545C2.245 5 2 4.776 2 4.5v-1c0-.276.244-.5.545-.5" />
+                  </svg>
+                </div>
+                <div class="pt-2">
+                  <p class=" text-light mx-2 ">Schedule a visit</p>
+                </div>
+              </div>
+            </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container p-3 mt-5" style=" font-size: 45px; font-weight: bold; text-align: center;">
+    <p class="mt-5" style="color:chocolate; font-size:15px;">| PROPERTIES</p>
+    <p>We Provide The <br>Best Property<br>You Like</p>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4 mt-4 m-5">
+
+    <div class="col">
+      <div class="card h-100" style="border:hidden; background-color:rgba(220, 220, 220, 0.769);">
+        <img src="./imgs/property-01.jpg" class="card-img-top" alt="..." style="padding:20px; border-radius: 30px;">
+        <div style="padding:20px;" class="card-body">
+          <button type="button" class="btn btn-sm" style="background-color:rgba(240, 206, 152, 0.76);">Luxury Villa</button>
+          <h5 class="float-end" style="font-weight:bold; color:chocolate;"> $2.264.000</h5>
+          
+          <h5 class="card-title mt-3" style="font-weight:bold ;">18 New Street Miami, OR 97219</h5><br>
+          <p class="card-text p-1">Bedrooms: <span style="font-weight:bold ;">4</span><span class="px-5">Bathrooms: <span
+                style="font-weight:bold;">3</span></span><br>Area: <span style="font-weight:bold ;">125m2</span><span
+              class="px-5">Floor: <span style="font-weight:bold;">25th</span></span><br>Parking: <span
+              style="font-weight:bold;">2 cars</span></p><hr>
+          <div class="d-grid gap-2 col-6 mx-auto m-1">
+            <button class="btn btn-dark btt rounded-pill" type="button">Schedule a visit</button>
+          </div>
+        </div>
+        <!-- <div class="card-body">
+          <h5 class="card-title" style="font-weight:bold ;">18 New Street Miami, OR 97219</h5><br>
+          <p class="card-text">Bedrooms: <span style="font-weight:bold ;">4</span><span class="px-5">Bathrooms: <span style="font-weight:bold;">3</span></span><br>Area: <span style="font-weight:bold ;">125m2</span><span class="px-5">Floor: <span style="font-weight:bold;">25th</span></span><br>Parking: <span style="font-weight:bold ;">2 cars</span> </p><hr>
+        </div> -->
+      </div>
+    </div>
+
+    <div class="col" id="prop">
+      <div class="card h-100" style="border:hidden; background-color:rgba(220, 220, 220, 0.769);">
+        <img src="./imgs/property-02.jpg" class="card-img-top" alt="..." style="padding:20px; border-radius: 30px;">
+        <div style="padding:20px;" class="card-body">
+          <button type="button" class="btn btn-sm" style="background-color:rgba(240, 206, 152, 0.76);">Luxury Villa</button>
+          <h5 class="float-end" style="font-weight:bold; color:chocolate;"> $1.180.000</h5>
+        
+          <h5 class="card-title mt-3" style="font-weight:bold ;">54 Mid Street Florida, OR 27001</h5><br>
+          <p class="card-text p-1">Bedrooms: <span style="font-weight:bold ;">6</span><span class="px-5">Bathrooms: <span
+                style="font-weight:bold;">5</span></span><br>Area: <span style="font-weight:bold ;">450m2</span><span
+              class="px-5">Floor: <span style="font-weight:bold;">3</span></span><br>Parking: <span
+              style="font-weight:bold;">8 spots</span></p>
+          <hr>
+          <div class="d-grid gap-2 col-6 mx-auto m-1">
+            <button class="btn btn-dark btt rounded-pill" type="button">Schedule a visit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100" style="border:hidden; background-color:rgba(220, 220, 220, 0.769);">
+        <img src="./imgs/property-03.jpg" class="card-img-top" alt="..." style="padding:20px; border-radius: 30px;">
+        <div style="padding:20px;" class="card-body">
+          <button type="button" class="btn btn-sm" style="background-color:rgba(240, 206, 152, 0.76);">Luxury Villa</button>
+          <h5 class="float-end" style="font-weight:bold; color:chocolate;"> $1.460.000</h5>
+        
+          <h5 class="card-title mt-3" style="font-weight:bold ;">26 Old Street Miami, OR 38540</h5><br>
+          <p class="card-text p-1">Bedrooms: <span style="font-weight:bold ;">5</span><span class="px-5">Bathrooms: <span
+                style="font-weight:bold;">4</span></span><br>Area: <span style="font-weight:bold ;">225m2</span><span
+              class="px-5">Floor: <span style="font-weight:bold;">3</span></span><br>Parking: <span style="font-weight:bold;">10
+              spots</span></p>
+          <hr>
+          <div class="d-grid gap-2 col-6 mx-auto m-1">
+            <button class="btn btn-dark btt rounded-pill" type="button">Schedule a visit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100" style="border:hidden; background-color:rgba(220, 220, 220, 0.769);">
+        <img src="./imgs/property-04.jpg" class="card-img-top" alt="..." style="padding:20px; border-radius: 30px;">
+        <div style="padding:20px;" class="card-body">
+          <button type="button" class="btn btn-sm" style="background-color:rgba(240, 206, 152, 0.76);">Apartment</button>
+          <h5 class="float-end" style="font-weight:bold; color:chocolate;"> $584.500</h5>
+        
+          <h5 class="card-title mt-3" style="font-weight:bold ;">12 New Street Miami, OR 12650</h5><br>
+          <p class="card-text p-1">Bedrooms: <span style="font-weight:bold ;">4</span><span class="px-5">Bathrooms: <span
+                style="font-weight:bold;">3</span></span><br>Area: <span style="font-weight:bold ;">125m2</span><span
+              class="px-5">Floor: <span style="font-weight:bold;">25th</span></span><br>Parking: <span style="font-weight:bold;">2 cars</span></p>
+          <hr>
+          <div class="d-grid gap-2 col-6 mx-auto m-1">
+            <button class="btn btn-dark btt rounded-pill" type="button">Schedule a visit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100" style="border:hidden; background-color:rgba(220, 220, 220, 0.769);">
+        <img src="./imgs/property-05.jpg" class="card-img-top" alt="..." style="padding:20px; border-radius: 30px;">
+        <div style="padding:20px;" class="card-body">
+          <button type="button" class="btn btn-sm" style="background-color:rgba(240, 206, 152, 0.76);">Penthouse</button>
+          <h5 class="float-end" style="font-weight:bold; color:chocolate;"> $925.600</h5>
+        
+          <h5 class="card-title mt-3" style="font-weight:bold ;">34 Beach Street Miami, OR 42680</h5><br>
+          <p class="card-text p-1">Bedrooms: <span style="font-weight:bold ;">4</span><span class="px-5">Bathrooms: <span
+                style="font-weight:bold;">4</span></span><br>Area: <span style="font-weight:bold ;">180m2</span><span
+              class="px-5">Floor: <span style="font-weight:bold;">38th</span></span><br>Parking: <span
+              style="font-weight:bold;">2 cars</span></p>
+          <hr>
+          <div class="d-grid gap-2 col-6 mx-auto m-1">
+            <button class="btn btn-dark btt rounded-pill" type="button">Schedule a visit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100" style="border:hidden; background-color:rgba(220, 220, 220, 0.769);">
+        <img src="./imgs/property-06.jpg" class="card-img-top" alt="..." style="padding:20px; border-radius: 30px;">
+        <div style="padding:20px;" class="card-body">
+          <button type="button" class="btn btn-sm" style="background-color:rgba(240, 206, 152, 0.76);">Modern Condo</button>
+          <h5 class="float-end" style="font-weight:bold; color:chocolate;"> $450.000</h5>
+        
+          <h5 class="card-title mt-3" style="font-weight:bold ;">22 New Street Portland, OR 16540</h5><br>
+          <p class="card-text p-1">Bedrooms: <span style="font-weight:bold ;">3</span><span class="px-5">Bathrooms: <span
+                style="font-weight:bold;">2</span></span><br>Area: <span style="font-weight:bold ;">165m2</span><span
+              class="px-5">Floor: <span style="font-weight:bold;">26th</span></span><br>Parking: <span
+              style="font-weight:bold;">3 cars</span></p>
+          <hr>
+          <div class="d-grid gap-2 col-6 mx-auto m-1">
+            <button class="btn btn-dark btt rounded-pill" type="button">Schedule a visit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="card text-bg-dark mt-5">
+    <img src="./imgs/kara-eads-L7EwHkq1B2s-unsplash.jpg" class="card-img" alt="..." style="opacity:0.25 ;">
+    <div class="card-img-overlay" style="text-align:center; font-size: 45px; font-weight: bold;">
+      <p class="mt-5" style="color:chocolate; font-size:15px;">| VIDEO VIEW</p>
+      <p>Get Closer View <br>& Different<br>Feeling</p><br><br><br>
+  
+    </div>
+  </div>
+
+  <div class="w-75 container mt-5 mb-5" style=" font-weight: 600; box-shadow: 0 5px 10px gray; border-radius:30px ;" id="cont">
+    <div class="row align-items-center justify-content-center flex-row-reverse">
+      <div class="col-md">
+        <img src="./img/learn.svg" alt="" class="img-fluid">
+        <img src="./imgs/undraw_confirmed_re_sef7.svg" class="float-end " width="400" height="400">
+      </div>
+      <div class="col-md py-4 mx-4">
+  
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Full Name : </label>
+          <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Your Name...">
+        </div>
+  
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address : </label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="Your E-mail...">
+          <div id="emailHelp" class="form-text" style="font-size:12px;">We'll never share your email with anyone else.
+          </div>
+        </div>
+  
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Subject : </label>
+          <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Subject...">
+        </div>
+  
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Message : </label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+            placeholder="Your Message..."></textarea>
+        </div>
+  
+        <button class="btn btn-dark rounded-pill btt px-5" id=""> Sand Message </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-5 " style="margin-left:15%;">
+    <div class="col-sm-5">
+      <div class="card mx-3 shad">
+        <div class="row g-0">
+          <div class="col-md-3 p-4 container">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-telephone"
+              viewBox="0 0 16 16" style="color:chocolate;">
+              <path
+                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+            </svg>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">010-020-0340</h5>
+              <p class="card-text"><small class="text-body-secondary">Phone Number</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-5">
+      <div class="card mx-3 shad">
+        <div class="row g-0">
+          <div class="col-md-3 p-4 container">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-envelope"
+              viewBox="0 0 16 16" style="color:chocolate;">
+              <path
+                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+            </svg>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">info@villa.co</h5>
+              <p class="card-text"><small class="text-body-secondary">Business Email</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center text-lg-start bg-light text-muted " id="End">
+      <div class="text-center text-light p-4" style="background-color:black;">
+      Copyright © 2024 All Rights Reserved.Design : <span style="color:chocolate ;"> Roaa Naser</span> 
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+    </script>
+</body>
+</html>
